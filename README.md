@@ -74,6 +74,12 @@ Financial markets are rife with widely accepted “truths” and myths (e.g., "S
 3. **(If Code Provided) Run the Analysis:**
    - Follow instructions in `src/` or `notebooks/` (if available).
    - Install required dependencies (typically via `requirements.txt` or `environment.yml`).
+   - Example: compute and plot a 20-day moving average from a CSV file using:
+
+     ```bash
+     python src/moving_average.py path/to/prices.csv \
+         --price-col Close --date-col Date --window 20 --output ma.png
+     ```
 
 ---
 
