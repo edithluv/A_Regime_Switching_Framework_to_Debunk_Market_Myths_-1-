@@ -42,6 +42,7 @@ Financial markets are rife with widely accepted “truths” and myths (e.g., "S
 - **Myth Testing:** Framework to encode and empirically test popular market myths.
 - **Visualization:** Clear, publication-quality plots to illustrate regime changes and myth validity.
 - **Extensible:** Easily adapt the framework to new myths, time periods, asset classes, or geographies.
+- **Financial Calculator:** Command-line calculator for common personal finance scenarios (simple/compound interest, loan payment, annuity growth).
 
 ---
 
@@ -74,6 +75,15 @@ Financial markets are rife with widely accepted “truths” and myths (e.g., "S
 3. **(If Code Provided) Run the Analysis:**
    - Follow instructions in `src/` or `notebooks/` (if available).
    - Install required dependencies (typically via `requirements.txt` or `environment.yml`).
+
+4. **Run the Financial Calculator:**
+   - Use `financial_calculator.py` for common calculations:
+     ```bash
+     python financial_calculator.py simple 1000 5 2
+     python financial_calculator.py compound 1000 8 10 --compounds-per-year 12
+     python financial_calculator.py loan 250000 6.5 30
+     python financial_calculator.py annuity 500 7 20 --contributions-per-year 12
+     ```
 
 ---
 
