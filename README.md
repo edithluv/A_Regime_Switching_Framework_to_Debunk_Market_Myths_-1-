@@ -120,3 +120,33 @@ Please open an issue or submit a pull request.
 
 This project is for academic and research use.  
 See `LICENSE` (if provided) for details.
+
+---
+
+## Utility: Invoice Generator
+
+This repository now includes a lightweight CLI utility to generate plain-text invoices.
+
+### Run
+
+```bash
+python3 invoice_generator.py \
+  --invoice-number INV-1001 \
+  --seller "Acme Analytics LLC" \
+  --client "Contoso Capital" \
+  --item "Research retainer:1:2500" \
+  --item "Backtest package:2:750" \
+  --tax-rate 0.0825 \
+  --due-days 15 \
+  --output invoice.txt
+```
+
+### Output
+
+The script writes a formatted invoice to the file you provide with `--output` (default: `invoice.txt`).
+
+Each `--item` must follow this format:
+
+`DESCRIPTION:QTY:UNIT_PRICE`
+
+Example: `"Model tuning:3:125"`
